@@ -1,0 +1,53 @@
+<!-- templates/components/excel_viewer.html -->
+{% if tablas %}
+    {% for nombre, tabla_html in tablas %}
+        <div class="tabla-contenedor">
+            <h2>{{ nombre }}</h2>
+            {{ tabla_html | safe }}
+        </div>
+    {% endfor %}
+{% else %}
+    <div class="mensaje-vacio">
+        <p>No se encontraron archivos Excel en la carpeta "data".</p>
+        <p>Por favor, coloque sus archivos Excel en la carpeta "data" y recargue la página.</p>
+    </div>
+{% endif %}
+
+<style>
+    .tabla-contenedor {
+        margin-bottom: 40px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #4CAF50;
+        margin-top: 0;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    .table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+    }
+    .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .table-striped tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .mensaje-vacio {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        color: #6c757d;
+    }
+</style>

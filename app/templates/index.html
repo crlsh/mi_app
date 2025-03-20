@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizador de Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .reload-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .reload-btn:hover {
+            background-color: #45a049;
+        }
+        .start-flujo-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .start-flujo-btn:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualizador de Excel</h1>
+    
+    <form action="/" method="get">
+        <button type="submit" class="reload-btn">Recargar Datos</button>
+    </form>
+    
+    <div class="container" id="main-content">
+        <!-- El contenido se cargará aquí dinámicamente -->
+        {% include 'excel_viewer.html' %}
+    </div>
+    
+    {% if tablas %}
+        <a href="{{ url_for('flujo', nombre_flujo='A') }}" class="start-flujo-btn">Iniciar Flujo de Selección</a>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flujo {{ flujo }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        form { display: inline-block; text-align: left; }
+        label, select { display: block; margin-bottom: 10px; }
+        .boton { padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        .tabla { margin-top: 20px; width: 80%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+
+<h1>Flujo {{ flujo }}</h1>
+
+<form method="POST">
+    <label>Diámetro:</label>
+    <select name="diametro">
+        <option value="TODOS">Todos</option>
+        <option value="10">10 mm</option>
+        <option value="20">20 mm</option>
+    </select>
+
+    <label>Tipo:</label>
+    <select name="tipo">
+        <option value="TODOS">Todos</option>
+        <option value="Acero">Acero</option>
+        <option value="Aluminio">Aluminio</option>
+    </select>
+
+    <button type="submit" class="boton">Aplicar Filtros</button>
+</form>
+
+</body>
+</html>
