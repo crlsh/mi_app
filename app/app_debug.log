@@ -1,0 +1,99 @@
+2025-03-25 16:39:08,585 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:08,586 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:08,621 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:08,635 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:10,671 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:11,384 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:11,384 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:11,419 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:11,432 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:15,490 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:16,273 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:16,273 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:16,307 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:16,319 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:19,372 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:20,026 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:20,026 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:20,062 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:20,075 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:24,134 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:24,781 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:24,781 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:24,815 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:24,827 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:27,875 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:28,495 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:28,495 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:28,530 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:28,542 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:31,584 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:32,254 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:32,254 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:32,288 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:32,301 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:37,367 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:38,005 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:38,006 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:38,041 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:38,054 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:39:38,080 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:39:38] "GET / HTTP/1.1" 200 -
+2025-03-25 16:39:38,114 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:39:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:39:38,114 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:39:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 16:39:40,579 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:39:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:39:42,131 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:39:42,760 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:39:42,760 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:39:42,795 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:39:42,807 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:40:25,978 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:40:25] "GET / HTTP/1.1" 200 -
+2025-03-25 16:40:26,014 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:40:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:40:26,019 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:40:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 16:42:18,601 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:42:18] "GET / HTTP/1.1" 200 -
+2025-03-25 16:42:18,630 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:42:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:42:18,633 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:42:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 16:47:38,959 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:47:39,740 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:47:39,740 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:47:39,777 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:47:39,793 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:48:04,062 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/routes.py', reloading
+2025-03-25 16:48:04,909 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:48:04,909 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:48:04,949 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:48:04,965 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:48:57,270 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:57] "GET / HTTP/1.1" 200 -
+2025-03-25 16:48:57,315 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:48:57,316 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 16:48:59,622 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:59] "GET / HTTP/1.1" 200 -
+2025-03-25 16:48:59,650 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:48:59,651 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:48:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 16:50:22,497 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/components/excel_viewer/excel_viewer.py', reloading
+2025-03-25 16:50:23,349 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:50:23,349 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:50:23,388 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:50:23,405 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:50:33,547 - werkzeug - INFO -  * Detected change in '/Users/a123456/repos/mi_app/app/main.py', reloading
+2025-03-25 16:50:34,395 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 16:50:34,396 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 16:50:34,437 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 16:50:34,454 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 16:51:20,132 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:51:20] "GET / HTTP/1.1" 200 -
+2025-03-25 16:51:20,161 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:51:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 16:51:20,162 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 16:51:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 17:05:01,754 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 17:05:01,754 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 17:05:01,796 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 17:05:01,796 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 17:05:01,797 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 17:05:02,248 - __main__ - INFO - Iniciando la aplicación...
+2025-03-25 17:05:02,248 - __main__ - INFO - Directorio de trabajo actual: /Users/a123456/repos/mi_app
+2025-03-25 17:05:02,283 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 17:05:02,295 - werkzeug - INFO -  * Debugger PIN: 863-810-800
+2025-03-25 17:05:02,912 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:02] "GET / HTTP/1.1" 200 -
+2025-03-25 17:05:02,936 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 17:05:02,936 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-03-25 17:05:04,761 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:04] "GET / HTTP/1.1" 200 -
+2025-03-25 17:05:04,792 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-03-25 17:05:04,794 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 17:05:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

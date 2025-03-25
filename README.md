@@ -7,63 +7,59 @@ Esta aplicación simple permite visualizar archivos Excel como tablas HTML en un
 - Python 3.6 o superior
 - pip (gestor de paquetes de Python)
 
+## Instrucciones SUPER SIMPLES
 
-# Configuración y ejecución en VS Code (Windows)
-Requisitos previos
+### Primera vez y todos los días
 
-Python 3.6 o superior
-pip (gestor de paquetes de Python)
+#### Opción 1: Ejecución con un solo clic
+- **Windows**: Haz doble clic en `run.bat`
+- **Mac/Linux**: 
+  1. Abre una terminal en la carpeta del proyecto
+  2. Ejecuta `chmod +x run.sh` (solo la primera vez)
+  3. Ejecuta `./run.sh`
 
-Pasos para ejecutar la aplicación
-1. Clonar el repositorio
+La aplicación se iniciará automáticamente y abrirá tu navegador.
 
-```
-git clone [URL_DEL_REPOSITORIO]
-cd mi_app
-```
-2. Crear y activar un entorno virtual
+#### Opción 2: Inicio manual
+Si prefieres iniciar manualmente:
 
- Crear entorno virtual
-```
-python -m venv venv
-```
+1. **Windows**: Ejecuta `start.bat`
+   **Mac/Linux**: Ejecuta `./start.sh` (después de `chmod +x start.sh` la primera vez)
 
-# Activar el entorno virtual
+2. Cuando veas el mensaje de confirmación, ejecuta:
+   ```
+   python app/main.py
+   ```
 
-```
-venv\Scripts\activate
-```
+3. Accede a http://127.0.0.1:5000 en tu navegador
 
-4. Preparar los archivos Excel
+### Para colocar archivos Excel
 
-Coloca tus archivos Excel (.xlsx o .xls) en la carpeta app/data/
-Si la carpeta no existe, se creará automáticamente al iniciar la aplicación
+1. Coloca tus archivos Excel (.xlsx o .xls) en la carpeta `app/data/`
+2. Haz clic en el botón "Recargar Datos" en la aplicación para ver los cambios
 
+### Para detener la aplicación
 
-#### 5. Iniciar la aplicación
-```
-python app/main.py
-```
+Presiona `Ctrl+C` en la ventana de la terminal donde se ejecuta la aplicación.
 
-#### 6. Acceder a la aplicación
+## ¿Qué hace esta aplicación?
 
-en el navegador
-```
- http://127.0.0.1:5000
-```
-Se veran todos los archivos Excel cargados y podrás iniciar los flujos de trabajo
+- Muestra archivos Excel de la carpeta `app/data/` como tablas HTML en tu navegador
+- Facilita la visualización de datos tabulares sin necesidad de abrir Excel
+- Permite compartir fácilmente información en formato tabular
 
-7. Desactivar el entorno virtual cuando termines
-Copydeactivate
-Solución de problemas comunes
+## Solución de problemas comunes
 
-Error "No module named...": Verifica que el entorno virtual esté activado y que todas las dependencias estén instaladas
-Archivos Excel no visibles: Asegúrate de que estén en la carpeta correcta (app/data/) y tengan la extensión correcta (.xlsx o .xls)
+- **Error "No module named..."**: Los scripts de inicio deberían resolver esto automáticamente
+- **Archivos Excel no visibles**: Asegúrate de que estén en la carpeta correcta (app/data/) y tengan la extensión correcta (.xlsx o .xls)
+- **Problemas persistentes**: Elimina la carpeta `.venv` y ejecuta nuevamente el script de inicio
 
-3. Abre tu navegador y ve a `http://localhost:5000`
+## Notas técnicas (para desarrolladores)
 
-## Notas
+Los scripts automatizan:
+1. La creación del entorno virtual (.venv) si no existe
+2. La instalación de dependencias necesarias
+3. La activación del entorno virtual
+4. La ejecución de la aplicación (solo los scripts `run.bat` y `run.sh`)
 
-- La aplicación mostrará todos los archivos Excel (.xlsx o .xls) encontrados en la carpeta `data`
-- Cada archivo se convertirá en una tabla HTML
-- Puedes recargar la página para actualizar los datos si agregas nuevos archivos Excel mientras la aplicación está corriendo
+Esto elimina la necesidad de recordar comandos complejos o entender cómo funcionan los entornos virtuales.

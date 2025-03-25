@@ -1,0 +1,91 @@
+<div class="excel-viewer-component">
+    {% if error %}
+        <div class="error-message">
+            <h3>Error al procesar archivos Excel</h3>
+            <p>{{ error }}</p>
+            <p>Por favor, verifique los archivos Excel y la configuración del sistema.</p>
+        </div>
+    {% endif %}
+    
+    {% if excel_files %}
+        <div class="excel-summary">
+            <p>Se encontraron {{ excel_files|length }} archivos Excel.</p>
+        </div>
+        
+        {% for nombre, tabla_html in excel_files %}
+            <div class="tabla-contenedor">
+                <h2>{{ nombre }}</h2>
+                <div class="table-responsive">
+                    {{ tabla_html | safe }}
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="mensaje-vacio">
+            <p>No se encontraron archivos Excel en la carpeta "data".</p>
+            <p>Por favor, coloque sus archivos Excel en la carpeta "data" y recargue la página.</p>
+        </div>
+    {% endif %}
+</div>
+
+<style>
+    .excel-viewer-component {
+        margin: 20px 0;
+    }
+    .tabla-contenedor {
+        margin-bottom: 40px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .tabla-contenedor h2 {
+        color: #4CAF50;
+        margin-top: 0;
+    }
+    .table-responsive {
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    .table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+    }
+    .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .table-striped tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .mensaje-vacio {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        color: #6c757d;
+    }
+    .error-message {
+        background-color: #f8d7da;
+        color: #721c24;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #f5c6cb;
+    }
+    .excel-summary {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #c3e6cb;
+    }
+</style>

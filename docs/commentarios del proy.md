@@ -32,8 +32,7 @@ Terminar ese flujo y, en lugar de salirse del programa, encadenar inmediatamente
 Si responde NO: saltarse la ejecución de ese flujo (no imprime materiales) y avanzar al siguiente flujo, salvo en el caso de FLUJO A y FLUJO E, que ya tienen desvíos particulares a otros flujos.
 
 
-EL CODIGO EJECUTADO EN JUPYTER ES: ESTA UN POCO DESPROLIJO, PERO BUENO AL MENOS FUNCIONA
-
+/IMPLEMNTACION BASICA COMO MOCKUP, A MODO DE EJEMPLO, NO ES EL CODIGO REAL
 
 import os
 

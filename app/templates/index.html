@@ -1,72 +1,104 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Visualizador de Excel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .reload-btn {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-        .reload-btn:hover {
-            background-color: #45a049;
-        }
-        .start-flujo-btn {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .start-flujo-btn:hover {
-            background-color: #0056b3;
-        }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Visualizador de Excel{% endblock %}
+
+{% block content %}
     <h1>Visualizador de Excel</h1>
     
     <form action="/" method="get">
         <button type="submit" class="reload-btn">Recargar Datos</button>
     </form>
     
-    <div class="container" id="main-content">
-        <!-- El contenido se cargará aquí dinámicamente -->
-        {% include 'excel_viewer.html' %}
+    <!-- Visualizar archivos Excel directamente -->
+    <div id="excel-viewer">
+        {% if excel_files %}
+            <div class="excel-summary">
+                <p>Se encontraron {{ excel_files|length }} archivos Excel.</p>
+            </div>
+            
+            {% for nombre, tabla_html in excel_files %}
+                <div class="tabla-contenedor">
+                    <h2>{{ nombre }}</h2>
+                    <div class="table-responsive">
+                        {{ tabla_html | safe }}
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="mensaje-vacio">
+                <p>No se encontraron archivos Excel en la carpeta "data".</p>
+                <p>Por favor, coloque sus archivos Excel en la carpeta "data" y recargue la página.</p>
+            </div>
+        {% endif %}
     </div>
-    
-    {% if tablas %}
-        <a href="{{ url_for('flujo', nombre_flujo='A') }}" class="start-flujo-btn">Iniciar Flujo de Selección</a>
-    {% endif %}
-</body>
-</html>
+{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .reload-btn {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+    .reload-btn:hover {
+        background-color: #45a049;
+    }
+    .tabla-contenedor {
+        margin-bottom: 40px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .tabla-contenedor h2 {
+        color: #4CAF50;
+        margin-top: 0;
+    }
+    .table-responsive {
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    .table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+    }
+    .table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .table-striped tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .mensaje-vacio {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        color: #6c757d;
+    }
+    .excel-summary {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #c3e6cb;
+    }
+</style>
+{% endblock %}
